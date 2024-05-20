@@ -1,0 +1,49 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Poppins:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500;1,600&display=swap');
+
+
+
+
+
+@import "../../../node_modules/bootstrap/scss/functions";
+@import "../../../node_modules/bootstrap-icons/font/bootstrap-icons.scss";
+
+
+
+// Variable overrides here
+$font-family-base: 'Lato';
+$headings-font-family:'Poppins';
+
+$primary: #1E468E;
+$danger: #ff4136;
+$input-placeholder-color: #ddd;
+$alert-padding-y: 0.35rem;
+
+@import '../../../node_modules/bootstrap/scss/bootstrap';
+
+
+
+// Maps
+
+
+.form-group { margin-bottom: 0.75rem;}
+.help { font-size:0.85rem; padding: 0.25rem 0;}
+html { height: 100%; width: 100%;}
+body { width: 100%; height: 100%;
+
+}
+
+.login {
+    display: flex; justify-content: center; align-items: center;
+    flex-direction: column;
+    background: url(../images/login_bg.png) no-repeat top center;
+    background-size:cover;
+    .header { display: none;}
+    .login-form-wrapper { flex-grow: 1; display: flex; justify-content: center; align-items: center;}
+    .logo { margin-bottom: 1rem;}
+    .login-card { 
+        width: 500px; max-width: 80%;
+        border-radius: 8px; background-color: white; padding: 1.75rem; 
+    }
+}
