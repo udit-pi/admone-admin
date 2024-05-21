@@ -3,12 +3,35 @@ import React from 'react'
 import { Accordion, Card, Badge, Table } from 'react-bootstrap';
 import TaskDataTableComponent from './sub-component/ClientDetails_Tasks';
 import ChatsDataTableComponent from './sub-component/ClientDetails_chats';
+import Layout from "../../components/layout/Layout";
+import PageTitle from '../../components/layout/Page_Title';
 
 
 // import '../../../assets/sass/style.scss'
 
 const Clientdetailsinfo = () => {
+
+
+  const toolbar = (
+    <>
+    <div className="input-group input-group-sm mb-3" style={{ width: 'auto' }}>
+    <input autoComplete="off" type="text" id="search_clients"  className="form-control" style={{ borderColor: '#1E468E' }} placeholder="Search by Name, EIN, City" aria-label="Search" aria-describedby="button-addon2" />
+    </div>
+    </>  
+);
+
+
+
+
   return (
+
+ 
+    
+
+
+<Layout>
+
+{/* <PageTitle title="Clients" toolbar={toolbar}></PageTitle> */}
     <div className='container-fluid'>
       {/* <div className="container-fluid"> */}
       <div className="page-title py-2">
@@ -282,7 +305,10 @@ const Clientdetailsinfo = () => {
 
 
     </div>
-    // </div>
+  
+    </Layout>
+
+
   )
 }
 
