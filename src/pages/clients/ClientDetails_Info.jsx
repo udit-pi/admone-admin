@@ -14,12 +14,15 @@ const Clientdetailsinfo = () => {
       <div className="page-title py-2">
         <div className="row align-items-center">
           <div className="col-md-3 col-sm-12">
-            <div className="d-flex align-items-end">
+            <div className="d-flex align-items-center">
               <h1 className="mb-0">ZAMINDAR LLC</h1>
+              
+              <div className='ms-3'>Active</div>
             </div>
           </div>
           <div className="col-md-9 col-sm-12 text-end">
             {/* Add any additional controls here */}
+            <button className='btn btn-md btn-primary'> New Chat</button>
           </div>
         </div>
       </div>

@@ -1,12 +1,11 @@
 import React from 'react'
 import { Form, Button } from 'react-bootstrap';
 import logo from "../../assets/images/adm_logo.png";
-
+import Layout from '../../components/layout/Layout_login'
 const Login = () => {
     return (
-        <div className='login'>
-           
-
+        <Layout>
+        <div className='login' style={{height:'100vh'}}>
             <div className="login-form-wrapper">
 
                 <div className="login-card">
@@ -14,7 +13,7 @@ const Login = () => {
 
                     <h3>Sign in</h3>
                     <Form >
-                        <Form.Group controlId="userSigninLogin">
+                        <Form.Group className='form-group' controlId="userSigninLogin">
                             <Form.Label>Email</Form.Label>
                             <Form.Control
                                 type="text"
@@ -28,7 +27,7 @@ const Login = () => {
                             </Form.Control.Feedback>
                         </Form.Group>
 
-                        <Form.Group controlId="userSigninPassword">
+                        <Form.Group  className='form-group' controlId="userSigninPassword">
                             <Form.Label>Password</Form.Label>
                             <Form.Control
                                 type="password"
@@ -52,21 +51,8 @@ const Login = () => {
 
 
             </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
         </div>
+        </Layout>
     )
 }
 
