@@ -1,4 +1,4 @@
-import '../../assets/sass/style.scss'; // Import SCSS styles
+import '../../assets/css/style.css'; // Import SCSS styles
 import Header from './Header'
 
 
@@ -7,15 +7,17 @@ const Layout = ({ children }) => {
 
 
     return (
-       
-            <div className="app">  
-            <Header/>
-            <div className="">
+
+        <>
+            <Header />
+
+            <section id="page-content" class="main-content  clients-content">
+                <div className="container-fluid">
                     {children}
-                   
                 </div>
-            </div>
-        
+            </section>
+            </>
+
     )
 }
 

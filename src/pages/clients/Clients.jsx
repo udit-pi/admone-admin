@@ -1,7 +1,7 @@
 import React from 'react'
 import { useNavigate } from 'react-router-dom';
 import Layout from "../../components/layout/Layout";
-
+import PageTitle from '../../components/layout/Page_Title';
 
 
 
@@ -52,41 +52,24 @@ const Clients = () => {
     navigate("/clientdetailsinfo");
   
   }
+
+  const toolbar = (
+      <>
+      <div className="input-group input-group-sm mb-3" style={{ width: 'auto' }}>
+      <input autoComplete="off" type="text" id="search_clients"  className="form-control" style={{ borderColor: '#1E468E' }} placeholder="Search by Name, EIN, City" aria-label="Search" aria-describedby="button-addon2" />
+      </div>
+      </>  
+  );
   
   return (
 
 <Layout>
     
- 
-<div className="container-fluid  mt-4">
 
 
-<div className="page-title py-2">
-      <div className="row align-items-center">
-        <div className="col-md-3 col-sm-12">
-          <div className="d-flex align-items-end">
-            <h1 className="mb-0">Clients</h1>
-          </div>
-        </div>
-        <div className="col-md-9 col-sm-12 text-end">
-          <div className="d-flex flex-grow-1 justify-content-md-end justify-content-sm-start align-items-center toolbar">
-            <div className="input-group input-group-sm mb-3" style={{ width: 'auto' }}>
-              <input
-                autoComplete="off"
-                type="text"
-                id="search_clients"
-                // onKeyUp={searchClients}
-                className="form-control"
-                style={{ borderColor: '#1E468E' }}
-                placeholder="Search by Name, EIN, City"
-                aria-label="Search"
-                aria-describedby="button-addon2"
-              />
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
+
+
+<PageTitle title="Clients" toolbar={toolbar}></PageTitle>
 
 
       <div className="card mt-4 client-view-table list-table">
@@ -123,7 +106,7 @@ const Clients = () => {
           </table>
         </div>
       </div>
-    </div>
+    
 
     </Layout>
         
